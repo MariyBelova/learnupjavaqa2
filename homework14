@@ -7,13 +7,13 @@ public class Main {
         int speedOfPlayer3 = 2;
         int numberOfRetiredPlayers = 0;
 
-        if (speedOfPlayer1 > 0) {
+        if (isGreenLight == false && speedOfPlayer1 > 0) {
             numberOfRetiredPlayers = numberOfRetiredPlayers + 1;
         }
-        if (speedOfPlayer2 > 0) {
+        if (isGreenLight == false && speedOfPlayer2 > 0) {
             numberOfRetiredPlayers = numberOfRetiredPlayers + 1;
         }
-        if (speedOfPlayer3 > 0) {
+        if (isGreenLight == false && speedOfPlayer3 > 0) {
             numberOfRetiredPlayers = numberOfRetiredPlayers + 1;
         }
         System.out.println("Количество игроков, которые выбывают:"+numberOfRetiredPlayers);
