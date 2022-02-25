@@ -1,0 +1,14 @@
+public class Game1 {
+        public static boolean isGreenLight = false;
+
+        public static boolean valueSpeed(int speedOfPlayer) {
+            int speed = speedOfPlayer;
+            if (isGreenLight == false && speed > 0) {
+                return true;
+            } else {
+                return false;
+            }
+
+
+        }
+    }
